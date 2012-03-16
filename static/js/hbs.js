@@ -11,11 +11,11 @@
 define: false, process: false, window: false */  
 define([
 //>>excludeStart('excludeHbs', pragmas.excludeHbs)
-'Handlebars', 'underscore', 'Handlebars/i18nprecompile', 'json2'
+'Handlebars', 'underscore', 'Handlebars/i18nprecompile' // PATCH: , 'json2'
 //>>excludeEnd('excludeHbs')
 ], function (
 //>>excludeStart('excludeHbs', pragmas.excludeHbs)
- Handlebars, _, precompile, JSON
+ Handlebars, _, precompile // PATCH: , JSON
 //>>excludeEnd('excludeHbs')
 ) {
 //>>excludeStart('excludeHbs', pragmas.excludeHbs)
@@ -413,7 +413,7 @@ define([
               });
             }
 
-            var path = parentRequire.toUrl(name +'.'+ (config.hbs && config.hbs.templateExtension? config.hbs.templateExtension : templateExtension));
+            var path = parentRequire.toUrl('template/' + name +'.'+ (config.hbs && config.hbs.templateExtension? config.hbs.templateExtension : templateExtension));
 
             if (disableI18n){
                 fetchAndRegister(false);
