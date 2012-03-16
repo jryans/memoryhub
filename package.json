@@ -1,11 +1,20 @@
 {
   "name": "memoryhub",
+  "author": "J. Ryan Stinnett <jryans@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jryans/memoryhub.git"
+  },
   "subdomain": "memoryhub",
   "scripts": {
     "start": "lib/main.js"
   },
-  "version": "0.0.0",
+  "version": "0.0.0-2",
   "engines": {
     "node": "v0.6.x"
+  },
+  "dependencies": {
+    "express": "*",
+    "hbs": "*"
   }
 }
