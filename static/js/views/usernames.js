@@ -2,7 +2,7 @@ define(['backbone', 'jquery', 'underscore', 'views/username'], function(Backbone
   var usernames = [];
 
   return Backbone.View.extend({
-    tagName: "div",
+    el: $('#users'),
 
     initialize: function() {
       this.model.bind('reset', this.addAll, this);

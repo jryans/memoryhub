@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+
+}
+
+
+#sec-users {
+
+}
+
+#users {
+
+}
+
+.username {
+  height: 120px;
+  width: 120px;
+  float: left;
+  border: 2px solid #CCC;
+  margin: 5px;
+}
+
+#sec-avatars {
+  clear: left;
+}
+
+.avatar {
+  float: left;
+  margin: 17px;
+}
+
+.avatar img {
+  height: 100px;
+  width: 100px;
+}
+
+.username .avatar {
+  float: none;
+  margin: 0;
+  position: auto;
+}
+
+.matched {
+  border-color: #2C2;
+}

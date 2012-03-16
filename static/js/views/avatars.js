@@ -2,7 +2,7 @@ define(['backbone', 'jquery', 'underscore', 'views/avatar'], function(Backbone, 
   var avatars = [];
 
   return Backbone.View.extend({
-    tagName: "div",
+    el: $('#avatars'),
 
     initialize: function() {
       this.model.bind('reset', this.addAll, this);
