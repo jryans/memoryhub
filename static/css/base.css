@@ -1,8 +1,10 @@
 body {
   text-align: center;
-
 }
 
+section {
+  margin-bottom: 2em;
+}
 
 #sec-users {
 
@@ -42,4 +44,8 @@ body {
 
 .matched {
   border-color: #2C2;
+}
+
+.clear {
+  clear: left;
 }

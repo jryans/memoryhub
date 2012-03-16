@@ -18,7 +18,8 @@ define(['backbone', 'jquery', 'underscore', 'views/avatar'], function(Backbone, 
 
     render: function() {
       var that = this;
-      _(avatars).each(function(avatar) {
+      var randomAvatars = _(avatars).shuffle();
+      _(randomAvatars).each(function(avatar) {
         that.$el.append(avatar.render().el);
       });
       return this;

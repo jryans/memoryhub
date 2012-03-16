@@ -18,7 +18,8 @@ define(['backbone', 'jquery', 'underscore', 'views/username'], function(Backbone
 
     render: function() {
       var that = this;
-      _(usernames).each(function(username) {
+      var randomUsernames = _(usernames).shuffle();
+      _(randomUsernames).each(function(username) {
         that.$el.append(username.render().el);
       });
       return this;
