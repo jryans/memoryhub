@@ -1,0 +1,11 @@
+{
+  "name": "memoryhub",
+  "subdomain": "memoryhub",
+  "scripts": {
+    "start": "lib/main.js"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": "v0.6.x"
+  }
+}
