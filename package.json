@@ -9,12 +9,12 @@
   "scripts": {
     "start": "lib/main.js"
   },
-  "version": "0.0.0-6",
+  "version": "0.0.0-7",
   "engines": {
     "node": "v0.6.x"
   },
   "dependencies": {
-    "express": "*",
-    "hbs": "*"
+    "express": "2.5.x",
+    "hbs": "1.0.x"
   }
 }
