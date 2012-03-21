@@ -15,11 +15,11 @@ define(['backbone', 'underscore', 'jquery', 'hbs!username', 'views/vent', 'jquer
           $(this).append($drag);
           $drag.attr('style', '');
           $(this).addClass('matched');
+          
+          $drag.data().set('matched', true);
         },
         accept: _.bind(function($item) {
-          var match = ($item.data().id === this.model.id);
-          $item.data().set('matched', match);
-          return match;
+          return $item.data().id === this.model.id;
         }, this)
       }); 
 
