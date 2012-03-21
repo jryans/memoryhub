@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -20,6 +21,8 @@ section {
   float: left;
   border: 2px solid #CCC;
   margin: 5px;
+  border-radius: 8px;
+  background: #EEE;
 }
 
 #sec-avatars {

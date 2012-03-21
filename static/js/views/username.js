@@ -1,9 +1,12 @@
-define(['backbone', 'underscore', 'jquery', 'hbs!username', 'jquery-ui'], function(Backbone, _, $, template) {
+define(['backbone', 'underscore', 'jquery', 'hbs!username', 'views/vent', 'jquery-ui'], 
+    function(Backbone, _, $, template, vent) {
   return Backbone.View.extend({
     tagName: "div",
     className: "username",
     template: template,
     render: function() {
+      var that = this;
+
       $(this.el).html(this.template(this.model.toJSON()));
 
       this.$el.droppable({
@@ -14,7 +17,9 @@ define(['backbone', 'underscore', 'jquery', 'hbs!username', 'jquery-ui'], functi
           $(this).addClass('matched');
         },
         accept: _.bind(function($item) {
-          return $item.data().id === this.model.id;
+          var match = ($item.data().id === this.model.id);
+          $item.data().set('matched', match);
+          return match;
         }, this)
       }); 
 
